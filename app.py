@@ -54,12 +54,12 @@ gross_income = filtered_data['gross income'].sum()
 total_quantity = filtered_data['Quantity'].sum()
 avg_rating = filtered_data['Rating'].mean().round(2)
 
-st.subheader("KPI / Key matrics")
+st.subheader("Key matrics")
 
 col1,col2,col3,col4 = st.columns(4)
 
 with col1:   
-    st.metric(label="Total Sales", value=f"{total_sales:,.2f}")
+    st.metric(label="Total Sales", value=f"${total_sales:,.2f}")
 with col2:
     st.metric(label="Total Gross Income", value=f"{gross_income:,.2f}")
 with col3:   
